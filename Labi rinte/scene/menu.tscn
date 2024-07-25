@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://drmie4jm2euwf"]
+
+[ext_resource type="Script" path="res://code/QUITTER.gd" id="1_bfkkc"]
+[ext_resource type="Script" path="res://code/JOUER.gd" id="1_iu0fi"]
+
+[node name="Menu" type="Node2D"]
+
+[node name="JOUER" type="Button" parent="."]
+offset_left = 706.0
+offset_top = 512.0
+offset_right = 763.0
+offset_bottom = 543.0
+text = "JOUER"
+script = ExtResource("1_iu0fi")
+
+[node name="QUITTER" type="Button" parent="."]
+offset_left = 1171.0
+offset_top = 524.0
+offset_right = 1246.0
+offset_bottom = 555.0
+text = "QUITTER"
+script = ExtResource("1_bfkkc")

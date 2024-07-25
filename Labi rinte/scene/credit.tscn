@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://ca86jdfiyadn8"]
+
+[ext_resource type="Script" path="res://code/QUITTER.gd" id="1_5j33r"]
+
+[node name="credit" type="Node2D"]
+
+[node name="QUITTER" type="Button" parent="."]
+offset_left = 1399.0
+offset_top = 83.0
+offset_right = 1474.0
+offset_bottom = 114.0
+text = "QUITTER"
+script = ExtResource("1_5j33r")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 696.0
+offset_top = 467.0
+offset_right = 1187.0
+offset_bottom = 493.0
+text = "Toutes les ressources du jeu ont été crée par Ozvann ABRAHAM.
+
+Merci d'avoir jouer au jeu."

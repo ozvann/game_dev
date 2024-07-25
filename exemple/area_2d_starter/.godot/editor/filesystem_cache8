@@ -1,0 +1,12 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1709405660
+Ball.gd::GDScript::-1::1702545054::0::1::::<>RigidBody2D<>::
+Ball.tscn::PackedScene::5080374824012568573::1702545054::0::1::::<><>::res://Ball.gd<>uid://b2bimjy3075py
+icon.svg::CompressedTexture2D::888467672143153975::1702545054::1702545128::1::::<><>::
+README.md::TextFile::-1::1702545054::0::1::::<><>::
+World.gd::GDScript::-1::1702545054::0::1::::<>Node2D<>::
+World.tscn::PackedScene::6329819482323193384::1702545294::0::1::::<><>::res://World.gd<>uid://sjnahvlt0cil::::res://assets/Roboto-Bold.ttf
+::res://assets/::1702545128
+ballBlue_09.png::CompressedTexture2D::4284091516235376158::1702545054::1702545128::1::::<><>::
+coin_06.png::CompressedTexture2D::2780469194653114535::1702545054::1702545128::1::::<><>::
+Roboto-Bold.ttf::FontFile::1282768306807593915::1702545054::1702545128::1::::<><>::

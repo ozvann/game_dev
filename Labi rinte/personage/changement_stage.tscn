@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvmdemf7ynyst"]
+
+[ext_resource type="Script" path="res://code/changement_stage.gd" id="2_my3d5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g8fsl"]
+size = Vector2(32, 32)
+
+[node name="changement_stage" type="Sprite2D"]
+hframes = 2
+vframes = 2
+frame = 3
+script = ExtResource("2_my3d5")
+metadata/_edit_group_ = true
+
+[node name="porte" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="porte"]
+shape = SubResource("RectangleShape2D_g8fsl")
+debug_color = Color(0, 0.639216, 0.345098, 0.419608)
+
+[connection signal="body_entered" from="porte" to="." method="_on_porte_body_entered"]

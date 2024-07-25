@@ -1,0 +1,116 @@
+[gd_scene load_steps=11 format=3 uid="uid://d0i1icb0g3v1j"]
+
+[ext_resource type="Script" path="res://code/CharacterBody2D.gd" id="1_3v36l"]
+[ext_resource type="Texture2D" uid="uid://cptkr0g4s4eew" path="res://sprite/personage1.png" id="2_gmeu0"]
+[ext_resource type="Texture2D" uid="uid://c4tbnas2kvbn0" path="res://sprite/blanc.png" id="3_hq8kc"]
+[ext_resource type="Script" path="res://code/QUITTER.gd" id="4_rhls0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nliwl"]
+size = Vector2(20, 25)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fejrn"]
+load_path = "res://.godot/imported/blanc.png-e16288e6f9c1c9b375c30c90b68ceaca.ctex"
+
+[sub_resource type="Animation" id="Animation_delaa"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_3u8md"]
+resource_name = "idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 1]
+}
+
+[sub_resource type="Animation" id="Animation_c7rgp"]
+resource_name = "run"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [4, 5, 6, 7, 4]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a0f1t"]
+_data = {
+"RESET": SubResource("Animation_delaa"),
+"idle": SubResource("Animation_3u8md"),
+"run": SubResource("Animation_c7rgp")
+}
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(-93, -80)
+script = ExtResource("1_3v36l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, 18.5)
+shape = SubResource("RectangleShape2D_nliwl")
+debug_color = Color(0.866667, 0, 0.482353, 0.419608)
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_gmeu0")
+hframes = 3
+vframes = 3
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.5, 1.5)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+color = Color(1, 0.756863, 0.639216, 1)
+texture = ExtResource("3_hq8kc")
+texture_scale = 6.0
+metadata/_edit_lock_ = true
+
+[node name="QUITTER" type="Button" parent="."]
+offset_left = 527.0
+offset_top = -336.0
+offset_right = 602.0
+offset_bottom = -305.0
+text = "QUITTER"
+script = ExtResource("4_rhls0")
+metadata/_edit_lock_ = true
+
+[node name="PointLight2D2" type="PointLight2D" parent="QUITTER"]
+position = Vector2(37.41, 15.43)
+scale = Vector2(0.884, 0.369)
+color = Color(0.654902, 0.654902, 0.654902, 1)
+texture = SubResource("CompressedTexture2D_fejrn")
+texture_scale = 1.28
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "idle"
+libraries = {
+"": SubResource("AnimationLibrary_a0f1t")
+}
