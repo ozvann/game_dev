@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://2f27uvtn5hby"]
+[gd_scene load_steps=11 format=3 uid="uid://2f27uvtn5hby"]
 
 [ext_resource type="Texture2D" uid="uid://c6d58n221s81u" path="res://sprite/bicolor.png" id="1_65xry"]
 [ext_resource type="Script" path="res://code/joueur.gd" id="2_tj1g7"]
 [ext_resource type="Script" path="res://code/balle.gd" id="3_0fw3k"]
 [ext_resource type="Texture2D" uid="uid://hl7exyrgif88" path="res://sprite/rond.png" id="3_8d2fv"]
+[ext_resource type="Script" path="res://code/quitter.gd" id="5_sbfd7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m8psj"]
 texture = ExtResource("1_65xry")
@@ -44,7 +45,7 @@ texture = ExtResource("1_65xry")
 sources/0 = SubResource("TileSetAtlasSource_m8psj")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ipldw"]
-size = Vector2(1152, 20)
+size = Vector2(1200, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ut7ra"]
 size = Vector2(15, 39)
@@ -178,7 +179,7 @@ vframes = 2
 frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bordure 1"]
-position = Vector2(544, 0)
+position = Vector2(552, 0)
 shape = SubResource("RectangleShape2D_ipldw")
 
 [node name="Bordure 2" type="StaticBody2D" parent="."]
@@ -194,7 +195,7 @@ vframes = 3
 frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bordure 2"]
-position = Vector2(544, 0)
+position = Vector2(560, 0)
 shape = SubResource("RectangleShape2D_ipldw")
 
 [node name="joueur" type="CharacterBody2D" parent="."]
@@ -212,8 +213,24 @@ texture = ExtResource("1_65xry")
 region_enabled = true
 region_rect = Rect2(24, 72, 16, 40)
 
+[node name="joueur2" type="CharacterBody2D" parent="."]
+position = Vector2(1056, 320)
+motion_mode = 1
+script = ExtResource("2_tj1g7")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="joueur2"]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_ut7ra")
+
+[node name="Sprite2D" type="Sprite2D" parent="joueur2"]
+texture = ExtResource("1_65xry")
+region_enabled = true
+region_rect = Rect2(24, 72, 16, 40)
+
 [node name="balle" type="CharacterBody2D" parent="."]
 position = Vector2(576, 320)
+floor_block_on_wall = false
 script = ExtResource("3_0fw3k")
 metadata/_edit_group_ = true
 
@@ -223,3 +240,10 @@ shape = SubResource("CircleShape2D_m76rc")
 [node name="Sprite2D" type="Sprite2D" parent="balle"]
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("3_8d2fv")
+
+[node name="QUITTER" type="Button" parent="."]
+offset_left = 32.0
+offset_right = 107.0
+offset_bottom = 31.0
+text = "QUITTER"
+script = ExtResource("5_sbfd7")
