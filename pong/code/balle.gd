@@ -1,12 +1,13 @@
 extends CharacterBody2D
 
 
-const SPEED = 150
-const GRAV = 190
+const SPEED = 220
+const GRAV = 200
 
 
 var col = 0
 var mur = 0
+var ver = 0
 
 
 
@@ -14,8 +15,10 @@ func _physics_process(delta):
 	
 	if is_on_ceiling():
 		col += 1
+		ver += 1
 	if is_on_floor():
 		col -= 1
+		ver += 1
 	
 	if col:
 		velocity.y = GRAV
@@ -23,10 +26,14 @@ func _physics_process(delta):
 		velocity.y = -GRAV
 	
 	
-	if is_on_wall():
-		mur += 1
-	if is_on_wall():
-		mur -= 1
+	
+	
+	if is_on_wall() and ver >= 1:
+		if mur == 1:
+			mur = 0
+		else:
+			mur = 1
+		ver = 0
 	
 	if mur:
 		velocity.x = SPEED
