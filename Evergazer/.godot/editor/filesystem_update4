@@ -1,0 +1,5 @@
+res://scene/menu.tscn
+res://code/jouer_campagne.gd
+res://code/jouer_infini.gd
+res://code/controle.gd
+res://code/quiter.gd
