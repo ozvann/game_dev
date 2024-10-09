@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 
-const SPEED = 220
-const GRAV = 200
+const SPEED = 300
+const GRAV = 300
 
 
 var col = 0
@@ -12,6 +12,9 @@ var ver = 0
 
 
 func _physics_process(delta):
+	
+	
+	
 	
 	if is_on_ceiling():
 		col += 1
