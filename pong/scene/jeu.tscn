@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://2f27uvtn5hby"]
 
 [ext_resource type="Texture2D" uid="uid://c6d58n221s81u" path="res://sprite/bicolor.png" id="1_65xry"]
-[ext_resource type="Script" path="res://scene/sortie.gd" id="2_cswqv"]
+[ext_resource type="Script" path="res://code/sortie.gd" id="2_cswqv"]
 [ext_resource type="Script" path="res://code/joueur.gd" id="2_tj1g7"]
 [ext_resource type="Script" path="res://code/balle.gd" id="3_0fw3k"]
 [ext_resource type="Texture2D" uid="uid://hl7exyrgif88" path="res://sprite/rond.png" id="3_8d2fv"]
