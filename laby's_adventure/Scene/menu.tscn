@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://ct8jjcki7uopn"]
+
+[ext_resource type="Script" path="res://Code/jouer.gd" id="1_jjv0g"]
+[ext_resource type="Script" path="res://Code/quitter.gd" id="2_xi52n"]
+
+[node name="Menu" type="Node2D"]
+
+[node name="JOUER" type="Button" parent="."]
+offset_left = 400.0
+offset_top = 248.0
+offset_right = 457.0
+offset_bottom = 279.0
+text = "JOUER"
+script = ExtResource("1_jjv0g")
+
+[node name="QUITTER" type="Button" parent="."]
+offset_left = 632.0
+offset_top = 248.0
+offset_right = 707.0
+offset_bottom = 279.0
+text = "QUITTER"
+script = ExtResource("2_xi52n")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 320)

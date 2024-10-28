@@ -52,5 +52,3 @@ func animation():
 
 	if Input.is_action_just_pressed("ui_right"):
 		$Sprite2D.flip_h = false
-
-
