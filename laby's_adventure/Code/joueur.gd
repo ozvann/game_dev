@@ -6,7 +6,7 @@ const SPEED = 300.0
 
 
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var directionX = Input.get_axis("ui_left", "ui_right")
 	var directionY = Input.get_axis("ui_up", "ui_down")
 	
