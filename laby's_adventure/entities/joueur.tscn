@@ -27,3 +27,4 @@ texture = ExtResource("3_sg3jb")
 
 [node name="option" parent="." instance=ExtResource("4_lktsf")]
 visible = false
+position = Vector2(-331.2, 0)

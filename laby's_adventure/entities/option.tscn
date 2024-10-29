@@ -5,13 +5,15 @@
 [ext_resource type="Script" path="res://Code/quitter.gd" id="3_bt7o1"]
 
 [node name="option" type="Node2D"]
+process_mode = 3
 script = ExtResource("1_6uof2")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(10, 5.5)
+scale = Vector2(3, 5)
 texture = ExtResource("1_bbr0r")
 
 [node name="QUITTER" type="Button" parent="."]
+process_mode = 3
 offset_left = -40.0
 offset_top = 88.0
 offset_right = 35.0
