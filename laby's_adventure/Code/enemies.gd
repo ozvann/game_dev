@@ -6,5 +6,10 @@ func _ready() -> void:
 	pass 
 
 
-func _on_enemies_body_entered():
-		visible = true
+
+func _on_area_2d_body_entered(_body: Node2D) -> void:
+	visible = false
+
+
+func _on_area_2d_body_exited(_body: Node2D) -> void:
+	visible = true

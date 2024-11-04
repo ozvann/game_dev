@@ -29,4 +29,18 @@ offset_bottom = -145.0
 text = "CONTINUER
 "
 
+[node name="Sauvegarder" type="Button" parent="."]
+offset_left = -56.0
+offset_top = -80.0
+offset_right = 66.0
+offset_bottom = -49.0
+text = "SAUVEGARDER"
+
+[node name="Charger" type="Button" parent="."]
+offset_left = -40.0
+offset_top = 8.0
+offset_right = 42.0
+offset_bottom = 39.0
+text = "CHARGER"
+
 [connection signal="pressed" from="CONTINUER" to="." method="_on_continuer_pressed"]
