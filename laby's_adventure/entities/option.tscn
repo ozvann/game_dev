@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://bi2o0e0h61yys"]
+
+[ext_resource type="Script" path="res://Code/option.gd" id="1_6uof2"]
+[ext_resource type="Texture2D" uid="uid://dh7ffj1g7r3f5" path="res://Image/option.png" id="1_bbr0r"]
+[ext_resource type="Script" path="res://Code/quitter.gd" id="3_bt7o1"]
+
+[node name="option" type="Node2D"]
+process_mode = 3
+script = ExtResource("1_6uof2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3, 5)
+texture = ExtResource("1_bbr0r")
+
+[node name="QUITTER" type="Button" parent="."]
+process_mode = 3
+offset_left = -40.0
+offset_top = 88.0
+offset_right = 35.0
+offset_bottom = 119.0
+text = "QUITTER"
+script = ExtResource("3_bt7o1")
+
+[node name="CONTINUER" type="Button" parent="."]
+offset_left = -48.0
+offset_top = -176.0
+offset_right = 53.0
+offset_bottom = -145.0
+text = "CONTINUER
+"
+
+[node name="Sauvegarder" type="Button" parent="."]
+offset_left = -56.0
+offset_top = -80.0
+offset_right = 66.0
+offset_bottom = -49.0
+text = "SAUVEGARDER"
+
+[node name="Charger" type="Button" parent="."]
+offset_left = -40.0
+offset_top = 8.0
+offset_right = 42.0
+offset_bottom = 39.0
+text = "CHARGER"
+
+[connection signal="pressed" from="CONTINUER" to="." method="_on_continuer_pressed"]

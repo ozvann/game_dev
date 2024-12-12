@@ -1,8 +1,13 @@
 extends CharacterBody2D
 
 
+<<<<<<< HEAD
+const SPEED = 250
+const GRAV = 200
+=======
 const SPEED = 300
 const GRAV = 300
+>>>>>>> 5a4dec92a6d6393154d4e5cfb73a124c067cca3e
 
 
 var col = 0

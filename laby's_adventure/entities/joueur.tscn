@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://co3yx11nqtd2"]
+
+[ext_resource type="Script" path="res://Code/joueur.gd" id="1_14448"]
+[ext_resource type="Texture2D" uid="uid://xhhjtv3qxm3d" path="res://Image/Laby.png" id="2_e0pwx"]
+[ext_resource type="Texture2D" uid="uid://7f6rlplhgyyg" path="res://Image/Torche.png" id="3_sg3jb"]
+[ext_resource type="PackedScene" uid="uid://bi2o0e0h61yys" path="res://entities/option.tscn" id="4_lktsf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4bg4a"]
+size = Vector2(31, 69)
+
+[node name="Joueur" type="CharacterBody2D"]
+scale = Vector2(1.25, 1.25)
+script = ExtResource("1_14448")
+
+[node name="Laby" type="Sprite2D" parent="."]
+texture = ExtResource("2_e0pwx")
+
+[node name="Colision_Laby" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 19.5)
+shape = SubResource("RectangleShape2D_4bg4a")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.25, 1.25)
+
+[node name="torche" type="Sprite2D" parent="."]
+texture = ExtResource("3_sg3jb")
+
+[node name="option" parent="." instance=ExtResource("4_lktsf")]
+visible = false
+position = Vector2(-331.2, 0)

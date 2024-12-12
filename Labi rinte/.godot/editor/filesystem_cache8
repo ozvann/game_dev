@@ -1,0 +1,25 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1729609663
+export_presets.cfg::TextFile::-1::1716283870::0::1::::<><>::
+icone.png::CompressedTexture2D::8733609011988650176::1714121248::1714121287::1::::<><>::
+::res://code/::1729067874
+changement_stage.gd::GDScript::-1::1715610139::0::1::::<>Sprite2D<>::
+CharacterBody2D.gd::GDScript::-1::1729067874::0::1::::<>CharacterBody2D<>::
+JOUER.gd::GDScript::-1::1709400469::0::1::::<>Button<>::
+QUITTER.gd::GDScript::-1::1706782855::0::1::::<>Button<>::
+::res://personage/::1715609974
+changement_stage.tscn::PackedScene::6271769550478287231::1714120754::0::1::::<><>::res://code/changement_stage.gd
+joueur.tscn::PackedScene::8932091199962292209::1715609974::0::1::::<><>::res://code/CharacterBody2D.gd<>uid://cptkr0g4s4eew
+::res://scene/::1729067950
+credit.tscn::PackedScene::4842864297880711079::1715610073::0::1::::<><>::res://code/QUITTER.gd
+menu.tscn::PackedScene::8377739342754203473::1729067874::0::1::::<><>::res://code/QUITTER.gd<>res://code/JOUER.gd
+niveau1.tscn::PackedScene::4122827922020458451::1729067950::0::1::::<><>::uid://ckjldig322liy::::res://tileset/mure.tres<>uid://d0i1icb0g3v1j::::res://personage/joueur.tscn<>uid://cvmdemf7ynyst::::res://personage/changement_stage.tscn<>uid://bt65vlrexl1e6::::res://sprite/70 by 70 orthogonal maze shema.png<>uid://dr2brc8am4c07::::res://sprite/4 couleur.png<>uid://cq572i2wp27h4::::res://sprite/blanc carre.png
+::res://sprite/::1715610097
+4 couleur.png::CompressedTexture2D::8408301823817042402::1715610064::1715610064::1::::<><>::
+70 by 70 orthogonal maze shema.png::CompressedTexture2D::3785864038878032791::1710336105::1710336105::1::::<><>::
+blanc carre.png::CompressedTexture2D::5959785821337715795::1710336320::1710336320::1::::<><>::
+blanc.png::CompressedTexture2D::6847624971577233407::1710157224::1710157233::1::::<><>::
+brique.png::CompressedTexture2D::21654323538877617::1706875461::1706875463::1::::<><>::
+personage1.png::CompressedTexture2D::5865536051403277526::1709633033::1709633033::1::::<><>::
+::res://tileset/::1729067874
+mure.tres::TileSet::5493982878620184540::1729067874::0::1::::<><>::uid://kqv465jvgof::::res://sprite/brique.png
