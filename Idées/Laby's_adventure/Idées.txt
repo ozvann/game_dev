@@ -1,0 +1,9 @@
+un personnage récurrent lors de la défaite de certain ennemies humain (les ennemies font parti des connaissance du personnage).
+Si on parle a se personnage après la défaite du bosse / ennemies il nous attaque mais il est très faible (au moins durant le premier combat car si on loupe un combat il se renforce pour le suivant).
+A la fin du jeu il va nous combattre a mort mais si on ne là jamais combatue il sera plus fort que le boss de fin mais si on l'a combatue durant l'aventure il sera aussi faible que le nombre de fois que l'on a battue.
+Si il est au plus au de sa forme il aura une forte régénération, force, aucune force. Il aura un aspect des plus énerver.
+
+
+
+
+
