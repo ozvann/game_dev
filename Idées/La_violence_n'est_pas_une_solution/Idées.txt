@@ -1,3 +1,10 @@
 Platformer où le hero principale combat sans tuer ses ennemies donc il ne fera que les neutraliser. une fois le jeu terminer pour la premier fois il est capturer par le méchant et torturer pendant 3 minutes on le voit se faire torturer puis il y a un choix soit d'abandonner dont on aura les crédits (donc la premier fois) sinon il y a le choix d'endurer et de se venger. après avoir le choix de se venger le joueur devra attendre 10 minutes dans la vrai vie puis il y aura une cinematique où un dieu amusé par la perséverance du hero va faire remonter le temps au monde en laissant les souvenirs d'avant a tout le monde. durant cette partie le hero va tuer les ennemies au lieu de les épargners. De part de cette violance il ne perdra pas fasse au boss du jeu. A la fin du jeu une cinematique se passera où on verra qu'il deviendra un apotre du dieu qui a remonter le temps.
 
 IMPORTANT : Pour ce jeu la pâte artistique doit être très mignonne.
+
+Comme le jeu se passe en deux partie le titre du jeu dans le menu va changer de :
+	La violence n'est pas une solution
+	
+	à
+	
+	La violence est la solution
