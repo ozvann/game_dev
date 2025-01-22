@@ -225,25 +225,24 @@ texture = ExtResource("1_65xry")
 region_enabled = true
 region_rect = Rect2(24, 72, 16, 40)
 
-[node name="balle" type="CharacterBody2D" parent="."]
-position = Vector2(576, 320)
-floor_block_on_wall = false
-script = ExtResource("3_0fw3k")
-metadata/_edit_group_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="balle"]
-shape = SubResource("CircleShape2D_m76rc")
-
-[node name="Sprite2D" type="Sprite2D" parent="balle"]
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("3_8d2fv")
-
 [node name="QUITTER" type="Button" parent="."]
 offset_left = 32.0
 offset_right = 107.0
 offset_bottom = 31.0
 text = "QUITTER"
 script = ExtResource("5_sbfd7")
+
+[node name="balle" type="RigidBody2D" parent="."]
+position = Vector2(576, 320)
+script = ExtResource("3_0fw3k")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="balle"]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_8d2fv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="balle"]
+shape = SubResource("CircleShape2D_m76rc")
 
 [connection signal="body_exited" from="sortie/porte" to="sortie" method="_on_porte_body_exited"]
 [connection signal="body_exited" from="sortie2/porte" to="sortie2" method="_on_porte_body_exited"]
