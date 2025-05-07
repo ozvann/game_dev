@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cx8plf0nrrjqo"
-path="res://.godot/imported/Bucheron.png-b25443df04394c6a1728918cdbf4a958.ctex"
+uid="uid://ym1qvg435cxj"
+path="res://.godot/imported/bouchon_bateau.png-a603fad334a666ee09e0eb3818c7df7e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://image/Bucheron.png"
-dest_files=["res://.godot/imported/Bucheron.png-b25443df04394c6a1728918cdbf4a958.ctex"]
+source_file="res://Image/bouchon_bateau.png"
+dest_files=["res://.godot/imported/bouchon_bateau.png-a603fad334a666ee09e0eb3818c7df7e.ctex"]
 
 [params]
 

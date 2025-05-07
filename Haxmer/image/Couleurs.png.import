@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://l6hq6cfoae1d"
-path="res://.godot/imported/4 couleur.png-ebfd2c18651a58b5f69da7955b7f94d9.ctex"
+uid="uid://ciq322o0yjd0e"
+path="res://.godot/imported/Couleurs.png-28fb4fb4dc02a659639864fae9855a13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://image/4 couleur.png"
-dest_files=["res://.godot/imported/4 couleur.png-ebfd2c18651a58b5f69da7955b7f94d9.ctex"]
+source_file="res://image/Couleurs.png"
+dest_files=["res://.godot/imported/Couleurs.png-28fb4fb4dc02a659639864fae9855a13.ctex"]
 
 [params]
 

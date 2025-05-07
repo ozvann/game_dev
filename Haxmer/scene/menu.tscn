@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b1su0ivvn8ioa"]
 
-[ext_resource type="Script" path="res://code/jouer.gd" id="1_bp6hx"]
-[ext_resource type="Script" path="res://code/quitter.gd" id="2_o8kf2"]
+[ext_resource type="Script" uid="uid://dy2vsi64oppbo" path="res://code/jouer.gd" id="1_bp6hx"]
+[ext_resource type="Script" uid="uid://c1ut5iu8hsocc" path="res://code/quitter.gd" id="2_o8kf2"]
 
 [node name="menu" type="Node2D"]
 
@@ -25,10 +25,10 @@ script = ExtResource("2_o8kf2")
 position = Vector2(578, 322)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = 320.0
-offset_top = 160.0
-offset_right = 360.0
-offset_bottom = 200.0
-text = "La violance n'est pas une solution"
+offset_left = 544.0
+offset_top = 192.0
+offset_right = 606.0
+offset_bottom = 232.0
+text = "Haxmer"
 fit_content = true
 autowrap_mode = 0

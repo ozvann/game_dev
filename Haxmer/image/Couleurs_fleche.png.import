@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://k2tweyt3gebp"
-path="res://.godot/imported/Bras_Bucheron.png-f240071bb68fc93b52d6c69da5fbefc3.ctex"
+uid="uid://batplnsu4cxut"
+path="res://.godot/imported/Couleurs_fleche.png-421cf3c0eec6fb8ee70a1f8f3a968420.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://image/Bras_Bucheron.png"
-dest_files=["res://.godot/imported/Bras_Bucheron.png-f240071bb68fc93b52d6c69da5fbefc3.ctex"]
+source_file="res://image/Couleurs_fleche.png"
+dest_files=["res://.godot/imported/Couleurs_fleche.png-421cf3c0eec6fb8ee70a1f8f3a968420.ctex"]
 
 [params]
 

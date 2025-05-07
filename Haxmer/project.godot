@@ -10,9 +10,9 @@ config_version=5
 
 [application]
 
-config/name="La violence n'est pas une solution"
+config/name="Haxmer"
 run/main_scene="res://scene/menu.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]

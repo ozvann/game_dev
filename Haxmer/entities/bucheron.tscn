@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dk2f4g1otk8c0"]
+
+[ext_resource type="Script" uid="uid://bsnkq7fpba825" path="res://code/bucheron.gd" id="1_bskfk"]
+[ext_resource type="Texture2D" uid="uid://batplnsu4cxut" path="res://image/Couleurs_fleche.png" id="2_h8bly"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s7sfq"]
+size = Vector2(64, 64)
+
+[node name="Bucheron" type="CharacterBody2D"]
+script = ExtResource("1_bskfk")
+
+[node name="Bucheron" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_h8bly")
+hframes = 5
+vframes = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("RectangleShape2D_s7sfq")
+debug_color = Color(0, 0.666667, 0, 0.603922)
+
+[node name="Camera2D" type="Camera2D" parent="."]
