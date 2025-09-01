@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://ch1tb0tdmgo7"]
+
+[ext_resource type="Script" uid="uid://dhth0l4wc2fc6" path="res://script/MainMenu.gd" id="1_e5g8k"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_e5g8k"]
+
+[node name="Menu" type="Node3D"]
+script = ExtResource("1_e5g8k")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+current = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Camera3D"]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Camera3D/CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -63.5
+offset_top = -33.0
+offset_right = 63.5
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="JouerButton" type="Button" parent="Camera3D/CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Nouvelle Partie"
+
+[node name="ContinuerButton" type="Button" parent="Camera3D/CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Continuer"
+
+[node name="QuitterButton" type="Button" parent="Camera3D/CanvasLayer/VBoxContainer"]
+layout_mode = 2
+text = "Quitter"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.33437, 0, -0.797679)
+mesh = SubResource("BoxMesh_e5g8k")
+
+[connection signal="pressed" from="Camera3D/CanvasLayer/VBoxContainer/JouerButton" to="." method="_on_jouer_button_pressed"]
+[connection signal="pressed" from="Camera3D/CanvasLayer/VBoxContainer/ContinuerButton" to="." method="_on_continuer_button_pressed"]
+[connection signal="pressed" from="Camera3D/CanvasLayer/VBoxContainer/QuitterButton" to="." method="_on_quitter_button_pressed"]

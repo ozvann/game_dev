@@ -13,7 +13,7 @@ config_version=5
 config/name="Laby's adventure"
 config/version="Alpha"
 run/main_scene="res://Scene/menu.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+config/features=PackedStringArray("4.4", "Forward Plus")
 run/max_fps=60
 config/icon="res://icon.svg"
 

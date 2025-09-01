@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://7crhfqcn4lyx"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_54bhm"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_w5w8a"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_uymo8"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_v7c1e"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_2de0f"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_fm4bm"]
+
+[node name="GridMap" type="Node3D"]
+
+[node name="sol" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_54bhm")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="sol"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="sol/StaticBody3D"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_w5w8a")
+
+[node name="mur" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, -2.18557e-08, -0.5, 0, 0.5, -2.18557e-08, 0, 0, 0)
+mesh = SubResource("PlaneMesh_uymo8")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="mur"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="mur/StaticBody3D"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+shape = SubResource("WorldBoundaryShape3D_v7c1e")
+
+[node name="arbre" type="MeshInstance3D" parent="."]
+mesh = SubResource("CylinderMesh_2de0f")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="arbre"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="arbre/StaticBody3D"]
+shape = SubResource("CylinderShape3D_fm4bm")
