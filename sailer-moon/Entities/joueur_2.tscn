@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://dj4t73dgxtin1"]
+[gd_scene load_steps=5 format=3 uid="uid://dj4t73dgxtin1"]
 
 [ext_resource type="Script" uid="uid://bsi1gns0bstuw" path="res://Code/joueur_1.gd" id="1_duxrh"]
 [ext_resource type="Texture2D" uid="uid://ym1qvg435cxj" path="res://Image/bouchon_bateau.png" id="2_d0uh6"]
@@ -6,6 +6,9 @@
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x14t6"]
 radius = 49.0
 height = 98.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_68g7a"]
+size = Vector2(96.849, 20)
 
 [node name="Joueur2" type="CharacterBody2D"]
 script = ExtResource("1_duxrh")
@@ -22,3 +25,9 @@ position = Vector2(64, 98)
 scale = Vector2(1.15644, 0.475788)
 shape = SubResource("CapsuleShape2D_x14t6")
 debug_color = Color(0.988235, 0, 0, 0.627451)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(64, 98)
+scale = Vector2(1.15644, 0.475788)
+shape = SubResource("RectangleShape2D_68g7a")
+debug_color = Color(0.733944, 0.457523, 7.70092e-07, 0.627451)
