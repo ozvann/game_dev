@@ -12,8 +12,9 @@ config_version=5
 
 config/name="Labi Rinte test"
 run/main_scene="res://scene/menu.tscn"
-config/features=PackedStringArray("4.3", "Forward Plus")
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icone.png"
+config/tags=PackedStringArray("test")
 
 [display]
 
