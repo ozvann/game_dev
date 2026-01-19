@@ -154,3 +154,28 @@ Il n'y en a pas
 En pause
 
 
+
+## YOLO
+
+##### Introduction
+
+Jeu qui risque de prendre beaucoup de temps a développé mais que j'espère finir un jour, ce sera un jeu seulement produit par moi avec un grand nombre de dialogue, fins, skills, personnage. Je veux que même après avoir créer se jeu, je puisse m'amuser a y jouer.
+
+##### Thème
+
+Le jeu est en 2d, rpg et histoire a fin multiple.
+
+##### Histoire
+
+Sera révélé quand le projet sera proche de la fin pour ne pas me la faire volé (même si personne la veut)
+
+##### Status
+
+En cours
+
+Début 17/11/2025
+
+Fin ??/??/????
+
+
+
