@@ -8,6 +8,8 @@ public class MoveDroid : MonoBehaviour
     private bool jumpKeyWasPressed = false;
     private InputAction moveAction;
     private bool isGrounded = false;
+    private LinearMovement currentPlatform;
+    private Vector3 previousPlatformPosition;
     public float speed = 15.0f;
     public float jumpForce = 9.5f;
 
@@ -28,17 +30,36 @@ public class MoveDroid : MonoBehaviour
     }
 
     void FixedUpdate() {
+        if (isGrounded && currentPlatform != null)
+        {
+            Vector3 platformMovement = currentPlatform.transform.position - previousPlatformPosition;
+            rb.position += platformMovement;
+            previousPlatformPosition = currentPlatform.transform.position;
+        }
+
         if (jumpKeyWasPressed && isGrounded) {
 	        rb.AddForce(Vector3.up * jumpForce, ForceMode.VelocityChange);
         }
         jumpKeyWasPressed = false;
     }
 
-    void OnCollisionEnter() {
+    void OnCollisionEnter(Collision collision) {
         isGrounded = true;
+        LinearMovement platform = collision.gameObject.GetComponentInParent<LinearMovement>();
+
+        if (platform != null)
+        {
+            currentPlatform = platform;
+            previousPlatformPosition = currentPlatform.transform.position;
+        }
     }
     
-    void OnCollisionExit() {
+    void OnCollisionExit(Collision collision) {
         isGrounded = false;
+
+        if (currentPlatform != null && collision.transform.IsChildOf(currentPlatform.transform))
+        {
+            currentPlatform = null;
+        }
     }
 }
