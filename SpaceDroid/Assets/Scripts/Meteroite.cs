@@ -12,7 +12,7 @@ public class Meteorite : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("blackhole"))
+        if (other.CompareTag("blackhole") || other.CompareTag("EnemyDetection"))
         {
             Destroy(gameObject);
         }
@@ -27,4 +27,5 @@ public class Meteorite : MonoBehaviour
         rb.AddForce(new Vector3(-5f, -0.7f, 0f), ForceMode.Acceleration);
         transform.Rotate(rotationSpeed * Time.deltaTime, rotationSpeed * Time.deltaTime, rotationSpeed * Time.deltaTime);
     }
+
 }

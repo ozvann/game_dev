@@ -4,6 +4,9 @@ public class BlackHole : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)
     {
-        Destroy(other.gameObject);
+        if (!other.CompareTag("EnemyDetection"))
+        {
+            Destroy(other.gameObject);
+        }
     }
 }
