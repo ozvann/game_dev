@@ -67,5 +67,6 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "SpaceDroid.slnx"
+    "dotnet.defaultSolution": "SpaceDroid.slnx",
+    "git.ignoreLimitWarning": true
 }

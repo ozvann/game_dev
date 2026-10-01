@@ -6,7 +6,16 @@ public class BlackHole : MonoBehaviour
     {
         if (!other.CompareTag("EnemyDetection"))
         {
-            Destroy(other.gameObject);
+            StatsDroid droid = other.GetComponentInParent<StatsDroid>();
+
+            if (droid != null)
+            {
+                droid.Die();
+            }
+            else
+            {
+                Destroy(other.gameObject);
+            }
         }
     }
 }

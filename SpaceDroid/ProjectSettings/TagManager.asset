@@ -7,6 +7,7 @@ TagManager:
   - Collectible
   - blackhole
   - EnemyDetection
+  - Platform
   layers:
   - Default
   - TransparentFX

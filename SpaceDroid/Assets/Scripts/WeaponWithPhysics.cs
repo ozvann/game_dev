@@ -57,18 +57,13 @@ public class WeaponWithPhysics : MonoBehaviour
 
     private void HitEnemy(Collider other)
     {
-        if (other.CompareTag("EnemyDetection"))
+        if (other.CompareTag("EnemyDetection") || other.CompareTag("Collectible") || (owner != null && other.GetComponentInParent<StatsDroid>() == owner))
         {
             return;
         }
 
         Enemy enemy = other.GetComponentInParent<Enemy>();
-        if (enemy == null)
-        {
-            return;
-        }
-
-        if (owner != null)
+        if (enemy != null && owner != null)
         {
             enemy.TakeDamage(owner.attack * weaponMultiplicator);
         }
